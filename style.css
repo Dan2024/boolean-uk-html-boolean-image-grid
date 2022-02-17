@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.center-wrapper {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 100rem;
+}
+
+/* grid classes */
+
+.three-column-grid__expand-one {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: 5px 10px;
+}
+
+.responsive-card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-inline: 2em;
+}
+
+/* ------------------- */
+/* main styling        */
+/* ------------------- */
+
+/* general styling */
+
+body {
+  background-image: url(/assets/images/hero.jpg);
+}
+
+main {
+  height: auto;
+  padding: 3rem 0;
+}
+
+li {
+  list-style: none;
+}
+
+header,
+footer {
+  background-color: #011434;
+}
+
+/* logo styling */
+
+.logo {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.github,
+.twitter {
+  width: 35px;
+  padding-left: 5px;
+}
+
+/* card styling */
+
+.card {
+  border: solid white 2px;
+  border-radius: 15px;
+  height: min-content;
+}
+.card-hero {
+  background-image: url(/assets/images/boolean-laptop.jpg);
+  height: 250px;
+  background-size: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  text-align: left;
+  display: grid;
+  justify-items: end;
+}
+
+.card-hero .logo {
+  padding: 5px;
+}
+
+.card__content {
+  font-family: poppins;
+  font-size: 0.75rem;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card__content p {
+  padding: 10px 40px 10px 10px;
+}
