@@ -30,6 +30,11 @@
 
 /* grid classes */
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .three-column-grid__expand-one {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -150,4 +155,19 @@ header {
 
 .card__content p {
   padding: 10px 40px 10px 10px;
+}
+
+/* profile styling */
+
+.profile-text {
+  background-color: white;
+  padding: 3rem;
+}
+
+.profile-text p {
+  margin: 40px;
+}
+.profile-img {
+  background-image: url(/assets/images/boolean-laptop.jpg);
+  background-size: cover;
 }
